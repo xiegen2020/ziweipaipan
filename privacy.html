@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 · 鸿玄紫微排盘</title>
+<meta name="description" content="鸿玄紫微排盘（HarmonyOS 应用）隐私政策在线版：本应用未申请任何权限、不联网、命例只存本机。">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23060C10'/><circle cx='32' cy='32' r='19' fill='none' stroke='%23C9A85C' stroke-width='3'/><circle cx='32' cy='32' r='4' fill='%23EAE3D2'/></svg>">
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0; padding: 0 20px 64px;
+    font-family: -apple-system, "PingFang SC", "HarmonyOS Sans SC", "Microsoft YaHei",
+                 "Noto Sans CJK SC", system-ui, sans-serif;
+    line-height: 1.9; font-size: 16px;
+    background: #f7f6f3; color: #182431;
+    max-width: 46em; margin-inline: auto;
+  }
+  header { padding: 40px 0 8px; border-bottom: 1px solid rgba(24,36,49,.12); }
+  h1 { font-size: 1.5em; margin: 0 0 6px; letter-spacing: .04em; }
+  .meta { font-size: .82em; color: #6b7580; margin: 0 0 14px; }
+  .lead { font-size: .9em; color: #55606b; background: #fff; border: 1px solid rgba(24,36,49,.1);
+          border-radius: 10px; padding: 12px 16px; margin: 18px 0 0; }
+  section { margin: 26px 0; }
+  h2 { font-size: 1.06em; margin: 0 0 6px; }
+  p { margin: 0 0 8px; }
+  nav { margin-top: 44px; font-size: .88em; }
+  nav a { color: #0a59f7; }
+  footer { margin-top: 28px; padding-top: 16px; border-top: 1px solid rgba(24,36,49,.12);
+           font-size: .8em; color: #6b7580; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #14171a; color: #e6e9ec; }
+    .lead { background: #1c2024; border-color: rgba(255,255,255,.1); }
+    header, footer { border-color: rgba(255,255,255,.12); }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>隐私政策</h1>
+    <p class="meta">鸿玄紫微排盘 · 版本 1.0.0 · 更新日期 2026-09-24</p>
+    <p class="lead">本页是「鸿玄紫微排盘」隐私政策的网络公开版，与 App 内「我的 → 隐私政策」展示的全文逐字一致。本应用未申请任何权限、不具备联网能力，命例数据只存在设备本机。</p>
+  </header>
+  <section>
+    <h2>一、适用范围</h2>
+    <p>本政策适用于「鸿玄紫微排盘」（包名 com.hongxuanziweipan.lanfeng，以下简称「本应用」）。</p>
+    <p>本应用是一款本地工具类应用：输入出生时间与流派口径，输出紫微斗数命盘与相关知识文本。本政策说明本应用在处理这些信息时的做法，以及您可以行使的权利。</p>
+  </section>
+  <section>
+    <h2>二、我们主动收集什么</h2>
+    <p>除以下三项外，本应用不主动收集任何信息：</p>
+    <p>1. 您在排盘页填写的出生年、月、日、时、分与性别；</p>
+    <p>2. 您选择的排盘口径（年界取正月初一或立春、晚子时是否换日、闰月归属方式）；</p>
+    <p>3. 您为某次排盘自填的命例标签文字（可留空）。</p>
+    <p>上述内容仅在您点击「保存命例」时写入本机数据库，用于在「命例」页重新呈现同一张盘。</p>
+  </section>
+  <section>
+    <h2>三、我们不收集什么</h2>
+    <p>本应用不收集、不请求、也不在后台读取：姓名、身份证号、手机号、人脸与指纹、通讯录、相册、位置信息、设备标识符、广告标识符、浏览与使用记录。</p>
+    <p>本应用未申请任何系统权限，不含统计埋点、崩溃上报、广告、社交登录等第三方 SDK，不向任何服务器发送请求，也不提供云端账号与同步功能。应用运行时不打包任何第三方代码，排盘与历法逻辑均为本工程内独立实现。</p>
+  </section>
+  <section>
+    <h2>四、数据存储在哪里</h2>
+    <p>命例数据保存在您设备本机、本应用私有沙箱目录下的关系型数据库文件（ziwei.db）中，安全等级按 S3 配置。该目录受系统隔离，其他应用无法读取，本应用也无法访问其他应用的数据。</p>
+    <p>关于备份与换机迁移：本应用已主动关闭系统备份与恢复能力的参与（应用清单中 allowToBackupRestore 设为 false），命例数据库不进入云备份，也不随换机迁移复制。因此您的命盘只存在于这台设备的本应用之内；相应地，换到新设备后需要重新录入出生信息。</p>
+  </section>
+  <section>
+    <h2>五、数据如何使用与清除</h2>
+    <p>数据仅用于在本机重新呈现您保存过的命盘：数据库只保存输入与口径参数，命盘由排盘引擎按同一口径实时重算，不保存推算结果，也不用于任何画像、推荐或模型训练。</p>
+    <p>清除途径有三条：</p>
+    <p>1. 「命例」页打开某条记录后点「删除该命例」，仅删除该条；</p>
+    <p>2. 「我的」页「数据与隐私」中的「清除全部命盘记录」，删除全部记录（不可恢复）；</p>
+    <p>3. 卸载本应用，系统随之删除沙箱内全部数据。</p>
+    <p>以上操作均在本地完成，不产生任何上传。</p>
+  </section>
+  <section>
+    <h2>六、未成年人保护</h2>
+    <p>本应用为本地排盘与民俗知识阅读工具，不面向未成年人提供服务，不含社交、付费、直播或留言功能，也不含任何针对未成年人的引导内容。未成年人在使用时应由监护人陪同与指导。若监护人认为相关内容不适宜，可通过下方联系方式提出，我们将在核实后调整。</p>
+  </section>
+  <section>
+    <h2>七、政策更新</h2>
+    <p>本政策更新日期为 2026-09-24。若后续版本新增数据处理行为（例如引入联网功能或新的存储内容），我们会在功能生效前更新本政策并在应用内显著提示，不会以静默方式扩大处理范围。您可以在「我的 → 隐私政策」随时查看当前版本全文。</p>
+  </section>
+  <section>
+    <h2>八、联系方式</h2>
+    <p>对本政策有疑问、想行使查询或删除权利、或希望反馈内容适宜性问题，请联系开发者：蓝峰，电子邮箱 2726212346@qq.com。由于本应用不持有您的任何个人信息，涉及具体数据删除的请求请在设备本机通过上述清除途径自助完成。</p>
+  </section>
+  <nav>
+    <p><a href="terms.html">用户协议</a></p>
+  </nav>
+  <footer>
+    <p>本页面内容与「鸿玄紫微排盘」应用内展示的法律文本保持同步；如有出入，以设备本机的最新版本为准。</p>
+    <p>服务备案号：鲁ICP备2025186060号-6A</p>
+  </footer>
+</body>
+</html>
